@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Fibonacci",
+  "version": "0.1.0",
+  "description": "Extensão para calcular números da sequência de Fibonacci",
+  "icons": {
+    "16": "img_fibonacci.png",
+    "32": "img_fibonacci.png",
+    "48": "img_fibonacci.png",
+    "128": "img_fibonacci.png"
+  },
+  "action": {
+    "default_title": "Fibonacci",
+    "default_popup": "ext.html",
+    "default_icon": {
+        "16": "img_fibonacci.png",
+        "32": "img_fibonacci.png",
+        "48": "img_fibonacci.png",
+        "128": "img_fibonacci.png"
+    }
+  }
+}
