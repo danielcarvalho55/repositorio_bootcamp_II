@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Fibonacci",
-  "version": "0.1.0",
+  "version": "0.2.3",
   "description": "Extensão para calcular números da sequência de Fibonacci",
   "icons": {
     "16": "img_fibonacci.png",
@@ -18,5 +18,14 @@
         "48": "img_fibonacci.png",
         "128": "img_fibonacci.png"
     }
-  }
+  },
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://*/*", "http://*/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://developer.chrome.com/*"],
+      "js": ["logica.js"],
+      "run_at": "document_idle"
+    }
+  ]
 }
